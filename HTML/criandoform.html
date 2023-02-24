@@ -7,21 +7,62 @@
     <title>Criando Form</title>
 </head>
     <thead>
-        <h1>Cadastro da liga dos Astronautas</h1>
+        <h3>Cadastro da liga dos Astronautas</h3>
     </thead>
 <body>
-    <tbody>
-        <td>
-            Nome: <input type="text"><br><br>
-            Email: <input type="text"> - Password: <input type="text"><br><br>
-            Data de nascimento: <input type="date"> - Foto <input type="file"> <br><br>
-            Nacionalidade: <input type=""> - Gênero: F <input type="button"> M <input type="button"><br><br>
-            Suas principais qualidades:<br>
-            Inteligência <input type="button"> | Resiliência <input type="button"> | Preparo físico <input type="button"> | Educação <input type="button"> | <br><br>
-            <input type="text" placeholder=" Porque você gostaria de ser um astronauta?"><br><br>
-            <input type="submit" placeholder="Criar">
+    <form action="">
+        <div>
+            <label for="q">Nome:</label>
+            <input type="text" id="q" name="q"></label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com"> - 
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label for="date">Data de nascimento:</label>
+            <input type="date" id="date" name="date"> - 
+            <label for="file">Foto: </label>
+            <input type="file" id="file" name="file">
+        </div>
+        <br>
+        <div>
+            <label for="nationality">Nacionalidade:</label>
+            <select name="nationality" id="nationality">
+                <option value="russian">Russa</option>  
+                <option value="american">Americana</option>
+                <option value="brazilian">Brasileira</option>
+            </select> - 
 
-        </td>
-    </tbody>
+            Gênero:
+            <label for="female">F</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="male">M</label>
+            <input type="radio" name="gender" id="male" value="male" />
+        </div>
+        <br>
+        <div>
+            Suas principais qualidades: 
+            <br>
+            <label for="int">Inteligência</label>
+            <input type="checkbox" name="int" id="int"> | 
+            <label for="res">Resiliência</label>
+            <input type="checkbox" name="res" id="res"> | 
+            <label for="prep">Preparo físico</label>
+            <input type="checkbox" name="prep" id="prep"> | 
+            <label for="edu">Educação</label>
+            <input type="checkbox" name="edu" id="edu">
+        </div>
+        <br>
+        <div>
+            <input type="description" placeholder="Porque você gostaria de ser um astronauta?" id="description"><br>
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
 </body>
 </html>
