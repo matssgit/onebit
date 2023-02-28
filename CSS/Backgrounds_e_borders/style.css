@@ -4,9 +4,11 @@ li{
 
 h1{
     color: purple;
-    font-size: 50px;
+    border: 2px dashed orange;
 }
 
 body{
-    background-image: ;
+    background-image: url('http://www.aex.ru/images/media/900/23259.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
