@@ -1,4 +1,21 @@
-const nomeTurista = prompt("Qual seu nome?")
-const cidade = prompt("Você já visitou alguma cidade?: \nSim: 1\nNão: 2")
+const turista = prompt("E aí, turista! Qual seu nome?")
+let cidades = ""
+let contagem = 0
+
+let continuar = prompt("Você visitou alguma cidade? (Sim/Não)")
+
+while (continuar === "Sim"){
+    let cidade = prompt("Qual é o nome da cidade visitada")
+    // cidades = cidades + ...
+    cidades += " - " + cidade + "\n"
+    contagem++
+    continuar = prompt("Você visitou alguma outra cidade? (Sim/Não)")
+}
+
+alert(
+    "Turista: " + turista + 
+    "\nQuantidade de cidades visitadas: " + contagem +
+    "\nCidades visitadas:\n" + cidades
+)
 
 
