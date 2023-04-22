@@ -10,5 +10,7 @@ for (let i = palavra.length - 1; i >= 0; i--){
 if (palavra === palavraInvertida) {
     alert(palavra + " é um palíndromo!")}
     else {
-        alert(palavra + " não é um palíndromo")
+        alert(
+            palavra + " não é um palíndromo\n\n" + 
+            palavra + " !== " + palavra + " !== " + palavraInvertida)
     }
