@@ -1,16 +1,5 @@
 {
-  "name": "23-usando-npm",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "\"matheus\"",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "i": "^0.3.7",
-    "lodash": "^4.17.21",
-    "npm": "^9.7.2"
+  "devDependencies": {
+    "eslint": "^8.43.0"
   }
 }
